@@ -9,17 +9,23 @@ export const TweetForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="bg-gray-200 border-red-400 border-2 max-w-md h-72 mx-auto my-0 rounded-xl flex flex-col justify-between">
       <textarea
-        className="w-full p-2 border border-gray-300 rounded"
-        rows="4"
+        className="mx-6 mt-3 mb-2 text-lg outline-gray-400 rounded-md border-red-400 font-thin"
+        name=""
         placeholder="What's happening?"
+        id=""
+        cols="50"
+        rows="5"
         value={tweet}
         onChange={(event) => setTweet(event.target.value)}
-      />
-      <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 mt-2" type="submit">
-        Tweet
+      ></textarea>
+      <p className="ml-6 mb-3 font-semibold text-red-600">Everyone can reply</p>
+      <hr className="border-stone-500 my-3 mx-7" />
+      <button className="p-2 text-white bg-red-600 ml-auto mr-4 mb-4 w-16 rounded-3xl font-semibold text-lg cursor-pointer hover:bg-red-300">
+        Post
       </button>
-    </form>
+    </div>
   );
 };
+
