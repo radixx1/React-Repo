@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header className="flex items-center justify-between bg-white p-4 border-b border-gray-200">
       <div className="flex items-center space-x-4">
-       
+       <SocialPattern/>
         {/* <img className="h-8 w-8 rounded-full" src="/twitter-logo.png" alt="Twitter Logo" /> */}
         <nav>
           <ul className="flex space-x-4">
